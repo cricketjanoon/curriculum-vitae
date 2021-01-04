@@ -1,0 +1,288 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+% ----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Shahbaz Ali} \\ \vspace{5pt}
+    \small 0321-4856934 $|$ \href{mailto:shahbazlization@gmail.com}{\underline{shahbazlization@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/shahbaz-ali-720887123/}{\underline{LinkedIn}} $|$
+    \href{https://github.com/cricketjanoon?tab=repositories}{\underline{GitHub}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Lahore University of Management Sciences, Lahore}{Lahore, Pakistan}
+      {MS in Computer Science, CGPA 3.20}{July 2019 - May 2021}
+      \item \textbf{Courses Taken:} Machine Learning, Design and Analysis of Algorithms, Deep Learning, Computer Vision, Advanced Operating System, Applied Probability, Digital Image Processing, Computer Architecture
+      \vspace{-0.25cm}
+      \item \textbf{Teaching Assistant:} Machine Learning, Intro to Artificial Intelligence, Design and Analysis of Algorithms, Deep Learning, Hardware Architecture for Artificial Intelligence
+      
+    \resumeSubheading
+      {Government College University, Lahore}{Lahore, Pakistan}
+      {BS Computer Science, GPA 3.43}{Aug. 2014 -- May 2018}
+      \item \textbf{Courses:} Operating Systems, Data Structures, Analysis Of Algorithms, Artificial Intelligence, Machine Learning, Networking, Databases, Theory of Automata, Compilers Construction
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Development Engineer}{July 2018 - November 2019}
+      {Skills Knight Studios}{Lahore, Pakistan}
+      \resumeItemListStart
+        \resumeItem{Worked on different cross platform mobile games. Mostly added features or updates to the games already published on Play Store and App Store.}
+        \resumeItem{Maintained a match 3 game with large user base. Removal of bugs reported by users and also quarterly major/minor feature updates}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+    % \resumeSubSubheading
+    % {Software Engineer I}{Oct 2014 - Sep 2016}
+    % \resumeItemListStart
+    %     \resumeItem{Apache Beam}
+    %      {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+    % \resumeItemListEnd
+    % \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    % \resumeSubheading
+    %   {Information Technology Support Specialist}{Sep. 2018 -- Present}
+    %   {Southwestern University}{Georgetown, TX}
+    %   \resumeItemListStart
+    %     \resumeItem{Communicate with managers to set up campus computers used on campus}
+    %     \resumeItem{Assess and troubleshoot computer problems brought by students, faculty and staff}
+    %     \resumeItem{Maintain upkeep of computers, classroom equipment, and 200 printers across campus}
+    % \resumeItemListEnd
+
+    % \resumeSubheading
+    %   {Artificial Intelligence Research Assistant}{May 2019 -- July 2019}
+    %   {Southwestern University}{Georgetown, TX}
+    %   \resumeItemListStart
+    %     \resumeItem{Explored methods to generate video game dungeons based off of \emph{The Legend of Zelda}}
+    %     \resumeItem{Developed a game in Java to test the generated dungeons}
+    %     \resumeItem{Contributed 50K+ lines of code to an established codebase via Git}
+    %     \resumeItem{Conducted  a human subject study to determine which video game dungeon generation technique is enjoyable}
+    %     \resumeItem{Wrote an 8-page paper and gave multiple presentations on-campus}
+    %     \resumeItem{Presented virtually to the World Conference on Computational Intelligence}
+    %   \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+    
+      \resumeProjectHeading
+          {\textbf{Deep Convolutional Generative Adversarial Network (DCGAN)} $|$ \emph{Python, Keras}}{April 2020}
+          \resumeItemListStart
+            \resumeItem{Assignment of Deep Learning course implemented using Convolutional Layers}
+            \resumeItem{Generated images of emojis (with good results) from Apple Emojis Dataset}
+            \resumeItem{Designed both generator and discriminator networks}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{Recurrent Neural Network (RNN)} $|$ \emph{Python, Keras}}{May 2020}
+          \resumeItemListStart
+            \resumeItem{Cleaning the dataset by removing stop words, punctuation, and html tags}
+            \resumeItem{Positive/Negative classification of movie reviews from IMDB dataset}
+          \resumeItemListEnd
+         
+      \resumeProjectHeading
+          {\textbf{File System (Linux)} $|$ \emph{C}}{May 2020}
+          \resumeItemListStart
+            \resumeItem{Basic file-system which has all basic functions like open(), close(), read(), write(), format(), unlink()}
+            \resumeItem {Managed multiple users accessing the same files simultaneously }
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{Memory Management (Linux)} $|$ \emph{C}}{April 2020}
+          \resumeItemListStart
+            \resumeItem{Mimic the functionality of malloc() and free() in C without using any external API }
+            \resumeItem {Added functionality like expand, coalesce and release for more efficient Memory Management}
+          \resumeItemListEnd          
+          
+      \resumeProjectHeading
+          {\textbf{Web Server (Linux)} $|$ \emph{C}}{March 2020}
+          \resumeItemListStart
+            \resumeItem{Primitive Multi-threaded Clients and Multi-threaded Server model }
+            \resumeItem{Clients send a request(using socket programming), which is completed and acknowledged by Server}
+          \resumeItemListEnd          
+
+      \resumeProjectHeading
+          {\textbf{Addictive Gem Match Mania (Mobile Game)} $|$ \emph{C\#, Unity Engine}}{Dec 2018 - Nov 2019}
+          \resumeItemListStart
+            \resumeItem{Match 3 mobile game for Android and iOS}
+            \resumeItem{Added core features to the game}
+            \resumeItem{Also fixed user reported bugs in the game (with 100000+ users)}
+          \resumeItemListEnd 
+          
+      \resumeProjectHeading
+          {\textbf{Clothing Classification (Neural Network)} $|$ \emph{MATLAB}}{June 2018}
+          \resumeItemListStart
+            \resumeItem{Implemented \& designed the architecture of Neural Network from scratch}
+            \resumeItem{Implemented Backpropagation algorithm to learn to learn the best color combination of clothes}
+            \resumeItem{Semester Project for Computer Vision Course}
+          \resumeItemListEnd 
+
+      \resumeProjectHeading
+          {\textbf{Handwritten Digit Classification (Neural Network) } $|$ \emph{MATLAB}}{March 2018}
+          \resumeItemListStart
+            \resumeItem{Implemented \& designed the architecture of Neural Network from scratch to work on MNIST Dataset}
+            \resumeItem{Implemented Backpropagation algorithm to learn to learn the best color combination of clothes}
+            \resumeItem{Semester Project for Machine Learning Course}
+          \resumeItemListEnd 
+
+      \resumeProjectHeading
+          {\textbf{Among the Dead Ones! (Desktop Game)} $|$ \emph{C\#, Unity Engine}}{Feb 2018 - July 2018}
+          \resumeItemListStart
+            \resumeItem{FPS Survival Shooter game for Desktop platform, worked as a part of my Final Year Project for Undergraduate}
+            \resumeItem{Designed and programmed AI Zombies (NPC) for the game.}
+            \resumeItem{Extensive work on Unity NavMesh System in collaboration with Unity’s Macanim System to control the root motion of NPC Zombies}
+            \resumeItem{Slide-free and accurate pathfinding for zombie character}
+            \resumeItem{Ragdoll System to detect bullets with re-animation feature for Zombies \& Audio Collection System with Scriptable Object}
+          \resumeItemListEnd 
+
+      \resumeProjectHeading
+          {\textbf{CrickSick Scoring Application (Android Application)} $|$ \emph{Android Studio}}{May 2017}
+          \resumeItemListStart
+            \resumeItem{Application for scoring/recording cricket matches}
+            \resumeItem{Simple User Friendly interface to detect all the event of cricket match}
+            \resumeItem{Semester project for Software Engineering Course}
+          \resumeItemListEnd 
+
+          
+    \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{
+    \item{
+     {A very good understanding of OPP concepts} \\
+     {Familiarity and understanding of relational databases like SQL} \\
+     {Good in logical and structural thinking} \\
+     \textbf{Languages}{: Python, C, C++, MATLAB, C\#, Java} \\
+     \textbf{Frameworks}{: Keras, TensorFlow, PyTorch} \\
+     \textbf{Developer Tools}{: PyCharm, Spyder, Jupyter Notebook, Git, VS Code, Visual Studio, Unity, Android Studio} \\
+     \textbf{Libraries}{: pandas, NumPy, Matplotlib, OpenCV, Scrappy} }
+     }
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
