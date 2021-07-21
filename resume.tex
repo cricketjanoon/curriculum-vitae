@@ -105,12 +105,6 @@
 
 \begin{document}
 
-% ----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
-
 \begin{center}
     \textbf{\Huge \scshape Shahbaz Ali} \\ \vspace{5pt}
     \small 0321-4856934 $|$ \href{mailto:shahbazlization@gmail.com}{\underline{shahbazlization@gmail.com}} $|$ 
@@ -124,10 +118,8 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Lahore University of Management Sciences, Lahore}{Lahore, Pakistan}
-      {\textbf{MS in Computer Science, CGPA 3.34}}{July 2019 - May 2021}
-      \item \textbf{Courses Taken:} Machine Learning, Design and Analysis of Algorithms, Deep Learning, Computer Vision, Advanced Operating System, Applied Probability, Digital Image Processing, Computer Architecture
-      \vspace{-0.25cm}
-      \item \textbf{Teaching Assistant:} Machine Learning, Intro to Artificial Intelligence, Design and Analysis of Algorithms, Deep Learning, Hardware Architecture for Artificial Intelligence
+      {\textbf{MS Computer Science, CGPA 3.17}}{July 2019 - May 2021}
+      \item \textbf{Courses Taken:} Machine Learning, Design and Analysis of Algorithms, Deep Learning, Computer Vision, Advanced Operating System, Applied Probability, Digital Image Processing, Computer Architecture, Speech Processing, ICT4D
       
     \resumeSubheading
       {Government College University, Lahore}{Lahore, Pakistan}
@@ -138,22 +130,42 @@
 
 %-----------EXPERIENCE-----------
 \section{Experience}
-  \resumeSubHeadingListStart
+\resumeSubHeadingListStart
 
     \resumeSubheading
-      {Technical Content Engineer}{Feb 2021 - }
+      {Technical Content Engineer}{Feb 2021 - July 2021}
       {Educative, Inc}{Lahore, Pakistan}
       \resumeItemListStart
-        \resumeItem{Managed difference courses on Educative.io}
+        \resumeItem{Created/Managed difference courses on the platform}
+        \resumeItem{Played part in the review process of different courses}
+        \resumeItem{Conducted interviews and helped in the hiring process}
     \resumeItemListEnd
-
+      
+    \resumeSubheading
+      {Teaching Assistant}{Jan 2020 - June 2021}
+      {Lahore University of Management Sciences}{Lahore, Pakistan}
+      \vspace{0.1cm}
+      
+      \resumeItemListStart
+      Designed and graded assignments/quizzes for the following courses:
+        \resumeItem{CS-623 Hardware Architecture for AI with Dr. Rehan Hameed (SPRING 2021)}
+        \resumeItem{CS-5317 Deep Learning with Dr. Murtaza Taj (SPRING 2021)}
+        \resumeItem{CS-510 Design \& Analysis of Algorithm with Dr. Imdad Ullah Khan (FALL 2020)}
+        \resumeItem{CS-535 Machine Learning with Dr. Agha Ali Raza (SPRING 2020)}
+        \resumeItem{CS-331 Artificial Intelligence with Dr. Mian Muhammad Awais (SPRING 2020)}        
+     \resumeItemListEnd      
+      
+      
     \resumeSubheading
       {Software Development Engineer}{July 2018 - November 2019}
       {Skills Knight Studios}{Lahore, Pakistan}
       \resumeItemListStart
         \resumeItem{Worked on different cross platform mobile games. Mostly added features or updates to the games already published on Play Store and App Store.}
         \resumeItem{Maintained a match 3 game with large user base. Removal of bugs reported by users and also quarterly major/minor feature updates}
-      \resumeItemListEnd
+\resumeItemListEnd
+    
+
+
       
 % -----------Multiple Positions Heading-----------
     % \resumeSubSubheading
@@ -192,6 +204,31 @@
 %-----------PROJECTS-----------
 \section{Projects}
     \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{Inference for CNN model in C} $|$ \emph{C/C++}}{March, 2021}
+          \resumeItemListStart
+            \resumeItem{Trained the CNN on fashion-mnist dataset in Keras}
+            \resumeItem{Saved the weights in binary files}
+            \resumeItem{Then used this weights to make prediction in C code}
+            \resumeItem{Implemented convolution, fully-connected, dropout, maxpool, relu and softmax layers in C}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{Face vs No-Face Image Classification via Linear Classifier} $|$ \emph{Python, Keras}}{Jan, 2021}
+          \resumeItemListStart
+            \resumeItem{Gather face images (male, female, child) from different datasets}
+            \resumeItem{Gathered no-face images from IMAGENT data set}
+            \resumeItem{Simply trained a liner classifier (without non-linearity)}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Male vs Female Image Classification via CNN} $|$ \emph{Python}}{Feb, 2021}
+          \resumeItemListStart
+            \resumeItem{Gathered small male and image dataset from internet}
+            \resumeItem{Trained different NN and CNN architecture and compared the results}
+            \resumeItem{Used different training and test data, then improved the accuracy using data augmentation}
+          \resumeItemListEnd
     
       \resumeProjectHeading
           {\textbf{Deep Convolutional Generative Adversarial Network (DCGAN)} $|$ \emph{Python, Keras}}{April 2020}
@@ -202,10 +239,37 @@
           \resumeItemListEnd
           
       \resumeProjectHeading
+          {\textbf{kNN Classifier} $|$ \emph{Python}}{July 2020}
+          \resumeItemListStart
+            \resumeItem{kNN classifier implemented on Iris Data Set}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{Naive Bayes Classifier} $|$ \emph{Python}}{June 2020}
+          \resumeItemListStart
+            \resumeItem{Multi-class classification using Naive Bayes on "Twitter US Airline Sentiment" dataset.}
+          \resumeItemListEnd          
+          
+      \resumeProjectHeading
           {\textbf{Recurrent Neural Network (RNN)} $|$ \emph{Python, Keras}}{May 2020}
           \resumeItemListStart
             \resumeItem{Cleaning the dataset by removing stop words, punctuation, and html tags}
             \resumeItem{Positive/Negative classification of movie reviews from IMDB dataset}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Frequency Domain Filtering} $|$ \emph{MATLAB}}{Nov 2020}
+          \resumeItemListStart
+            \resumeItem{Created loop-based and vectorized implementation for FFT and IFFT}
+            \resumeItem {Applied idead, butterworth and gaussian filter in frequency domain, and compared results}
+          \resumeItemListEnd
+         
+      \resumeProjectHeading
+          {\textbf{Content Based Image Retrieval (CBIR)} $|$ \emph{MATLAB}}{Oct 2020}
+          \resumeItemListStart
+            \resumeItem{Created the database of training images histograms}
+            \resumeItem {Compared and retrieved the images based on similar histograms}
+            \resumeItem{Also tried equalized image histograms to see if that is a good feature to compare images. Results were negative.}
           \resumeItemListEnd
          
       \resumeProjectHeading
@@ -227,7 +291,20 @@
           \resumeItemListStart
             \resumeItem{Primitive Multi-threaded Clients and Multi-threaded Server model }
             \resumeItem{Clients send a request(using socket programming), which is completed and acknowledged by Server}
-          \resumeItemListEnd          
+          \resumeItemListEnd     
+
+      \resumeProjectHeading
+          {\textbf{Hidden Markov Model (Bakis Model)} $|$ \emph{Python}}{Nov 2019}
+          \resumeItemListStart
+            \resumeItem{Applied HHM for part-of-speech prediction in natural language}
+          \resumeItemListEnd 
+
+      \resumeProjectHeading
+          {\textbf{Binary Independence Model (BIM)} $|$ \emph{Python}}{Oct 2019}
+          \resumeItemListStart
+            \resumeItem{Applied BIM on corpus of 25000 news articles}
+            \resumeItem{With trained BIM, the retrievals were very fast (milliseconds)}
+          \resumeItemListEnd 
 
       \resumeProjectHeading
           {\textbf{Addictive Gem Match Mania (Mobile Game)} $|$ \emph{C\#, Unity Engine}}{Dec 2018 - Nov 2019}
@@ -235,7 +312,7 @@
             \resumeItem{Match 3 mobile game for Android and iOS}
             \resumeItem{Added core features to the game}
             \resumeItem{Also fixed user reported bugs in the game (with 100000+ users)}
-          \resumeItemListEnd 
+          \resumeItemListEnd
           
       \resumeProjectHeading
           {\textbf{Clothing Classification (Neural Network)} $|$ \emph{MATLAB}}{June 2018}
@@ -251,7 +328,7 @@
             \resumeItem{Implemented \& designed the architecture of Neural Network from scratch to work on MNIST Dataset}
             \resumeItem{Implemented Backpropagation algorithm to learn to learn the best color combination of clothes}
             \resumeItem{Semester Project for Machine Learning Course}
-          \resumeItemListEnd 
+          \resumeItemListEnd
 
       \resumeProjectHeading
           {\textbf{Among the Dead Ones! (Desktop Game)} $|$ \emph{C\#, Unity Engine}}{Feb 2018 - July 2018}
