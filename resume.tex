@@ -18,6 +18,7 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+\usepackage{amsmath}
 \usepackage{graphicx} % includegraphics command is implemented here
 \input{glyphtounicode}
 
@@ -136,16 +137,14 @@
 
 
     \resumeSubheading
-      {Senior Software Engineer, C++}  {Mar 2024 - Present}
+      {Senior Software Engineer \text{\textbar} C++}  {Mar 2024 - Present}
       {Logiciel Services}{Remote}
       \resumeItemListStart
-        \resumeItem{Work on low-latency improvements and tuning FIX engine parameters for better execution speeds.}
-        \resumeItem{Investigate and resolve FIX session disconnects, order rejections, and message mismatches.}
-        \resumeItem{Analyze FIX logs to debug trade breaks, latency issues, and execution errors.}
-        \resumeItem{Provide real-time production support for FIX-related trading issues and outages.}
-        \resumeItem{Design and develop multithreaded applications for FIX message processing using Intel TBB}
-        \resumeItem{Improve message parsing, order routing, and execution speed using advanced C++ techniques.}
-        \resumeItem{Use Boost.Asio for asynchronous networking and I/O operations to improve trading system responsiveness.}
+        \resumeItem{Optimized low-latency trading performance by tuning FIX engine parameters and enhancing message parsing, order routing, and execution speeds using advanced C++ techniques.
+Leveraged Boost.Asio for asynchronous networking to improve system responsiveness and throughput.
+Provided real-time production support, resolving FIX session issues, order rejections, and execution anomalies through detailed log analysis and debugging.}
+        \resumeItem{Developed core components of the Signals Engine in C++, implementing technical indicators (EMA, SMA, MACD, RSI, Stochastic, Parabolic SAR) using TA-Lib.
+Built pattern detection logic for candlestick, MACD, stochastic, and PSAR-based patterns, and integrated them to generate buy/sell signals based on configurable strategies.}
 		\resumeItemListEnd
         \resumeSubheading
       {C Developer}  {Mar 2024 - Sep 2024}
@@ -166,23 +165,18 @@
 
 
     \resumeSubheading
-      {Senior Software Engineer, C++}{Aug 2021 - Feb 2024}
+      {Senior Software Engineer \text{\textbar} C++}{Aug 2021 - Feb 2024}
       {Avanza Solutions}{Hybrid/Remote}
       \resumeItemListStart
         \resumeItem{Worked as a C++ Developer in the Electronic Funds Transfer (EFT) department.}
         \resumeItem{Worked on a product, \textbf{Rendezvous}, which is a middleware solution to incorporate multiple financial and non-financial channels i.e. Mobile, Internet Banking, POS, Credit/Debit Card Payment Systems, Core Banking, Loan Management Systems etc.}
         \resumeItem{Reponsibiliies included sending and receiving message over TCP/IP sockets to 1-link (which is national switch for IBFT payments in Pakistan)}
         \resumeItem{Worked for national and International Clients: KHCB (Bahrain), NRSP(Pakistan), F5(Dubai)}
-        \resumeItem{Responsibilities included:
-            \resumeItemListStart
-        			\resumeItem{Development and deployment of new financial or non-financial transactions.}
-        			\resumeItem{Unit Testing during development.}
-        			\resumeItem{Managing databases using SQL/Oracle.}
-   			\resumeItemListEnd}
+        \resumeItem{Responsibilities included: Development and deployment of new financial or non-financial transactions, Unit Testing during development, Managing databases using SQL/Oracle.}
     \resumeItemListEnd
       
     \resumeSubheading
-      {Teaching Assistant}{Jan 2020 - Jan 2022}
+      {Teaching Assistant \text{\textbar} C, C++, Python, Matlab}{Jan 2020 - Jan 2022}
       {Lahore University of Management Sciences}{Lahore, Pakistan}
       \vspace{0.1cm}
       
@@ -206,7 +200,7 @@
 %    \resumeItemListEnd
       
     \resumeSubheading
-      {Software Development Engineer}{July 2018 - November 2019}
+      {Software Development Engineer \text{\textbar} C\#, Unity}{July 2018 - November 2019}
       {Skill Knight Studios}{Lahore, Pakistan}
       \resumeItemListStart
         \resumeItem{Worked on different cross platform mobile games. Mostly added features or updates to the games already published on Play Store and App Store.}
